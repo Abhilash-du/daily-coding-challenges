@@ -65,3 +65,11 @@ B = [
 ]
 matrix_sub = Solution()
 print(matrix_sub.solve(A, B))
+
+# Observation and Approach followed:-
+# Below mentioned steps explains how we can find difference of two matrices:
+# => To subtract two matrices we have to subtract their corresponding elements.
+# For example, newA[i][j] = A[i][j] - B[i][j].
+# => Traverse both matrices row wise(first all elements of a row, then jump to next row) using two loops.
+# => For every element A[i][j], subtract it with corresponding element B[i][j] and
+# store the result in difference matrix at newA[i][j].
