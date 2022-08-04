@@ -32,7 +32,7 @@ class Solution:
         n = len(A)
         for i in range(n):
             ascii_val = ord(A[i])
-            if ascii_val > 64 and ascii_val < 91:
+            if 64 < ascii_val < 91:
                 A[i] = chr(ascii_val ^ (
                             1 << 5))  # the difference between the ascii of a characters is 32 (we can togle 2**5 bit)
         return A
