@@ -66,4 +66,4 @@ class Solution:
 # You can use two loops in the array A outer loop i:1 to n and inner loop j:1 to n
 # or also can use while loop to iterate
 # and search if A[i][j] matches with B.
-# If there are multiple B return the smallest value i*1009 + j.
+# If there are multiple B return the smallest value i*1009 + j
