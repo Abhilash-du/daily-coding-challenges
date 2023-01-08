@@ -1,6 +1,7 @@
-# Problem Description
-# Given a 2 x N grid of integer, A, choose numbers such that the sum of the numbers is maximum and no two chosen numbers are adjacent horizontally, vertically or diagonally, and return it.
-# Note: You can choose more than 2 numbers.
+# Problem Description:
+# Given a 2 x N grid of integer, A, choose numbers such that the sum of the numbers is maximum
+# and no two chosen numbers are adjacent horizontally, vertically or diagonally, and return it. Note: You can choose
+# more than 2 numbers.
 #
 # Problem Constraints
 # 1 <= N <= 20000
@@ -53,6 +54,7 @@ class Solution:
         return max_arr[n - 1]
 
 # Solution Approach/Observation:-
+#
 # No two adjacent elements should be taken ( Adjacent is defined by horizontally, vertically, diagonally ).
 #
 # so suppose we have 2 * N list :
@@ -88,6 +90,5 @@ class Solution:
 # MAX_SUM(pos, include_current_element) =
 # IF include_current_element = FALSE THEN
 #     max ( MAX_SUM(pos - 1, FALSE) , MAX_SUM(pos - 1, TRUE) )
-#
 # ELSE
 #     MAX_SUM(pos - 1, FALSE) + val(pos)
