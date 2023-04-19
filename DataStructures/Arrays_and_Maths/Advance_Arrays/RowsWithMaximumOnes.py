@@ -32,11 +32,11 @@ Input 2:
          [0, 1, 1, 1]    ]
 
 
-Example Output
+Example
 Output 1: 0
 Output 2: 3
 
-Example Explanation
+Example
 Explanation 1: Row 0 has maximum number of 1s.
 Explanation 2: Row 3 has maximum number of 1s.
 """
