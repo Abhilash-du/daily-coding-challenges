@@ -1,5 +1,5 @@
 # coding_practice
-👋 Welcome to my git repository of DSA solutions! In this repository, you will find a vast collection of solutions to various DSA problems, crafted by me through daily practice on platforms like LeetCode and more.
+👋 Welcome to my git repository of DSA solutions! In this repository, you will find a vast collection of solutions to various DSA problems, crafted by me through daily practice on platforms like LeetCode and Scaler.
 
 📈 I have been adding new solutions to this repository every day (with occasional breaks), so you can expect to find a wealth of content here. Each solution comes with a detailed explanation of the problem, followed by the approach I used to solve it. I also provide a breakdown of the time and space complexity of the algorithm, so you can get a good understanding of how efficient each solution is.
 
