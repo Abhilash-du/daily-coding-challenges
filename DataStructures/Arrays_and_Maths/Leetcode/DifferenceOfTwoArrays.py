@@ -32,6 +32,8 @@ Constraints:
 class Solution:
     def findDifference(self, nums1, nums2):
         return [set(nums1).difference(nums2), set(nums2).difference(nums1)]
+
+
 """
 
 The approach used in the given solution is to convert both nums1 and nums2 lists into sets and then use the 
