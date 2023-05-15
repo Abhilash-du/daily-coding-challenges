@@ -41,7 +41,7 @@ import collections
 
 
 class Solution:
-    def maxScore(self, nums: List[int]) -> int:
+    def maxScore(self, nums) -> int:
         n = len(nums)
         dp = collections.defaultdict(int)
         return self.findMaxScore(nums, 1, 0, dp)
