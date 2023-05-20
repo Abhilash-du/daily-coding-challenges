@@ -1,4 +1,9 @@
 """
+# Author: Abhilash Dubey
+# GitHub:  https://github.com/Abhilash-du/
+# Description: Python solution to Find out the number of A digit positive numbers, whose digits on being added equals
+    to a given number B.
+
 Problem Description
 Find out the number of A digit positive numbers, whose digits on being added equals to a given number B.
 Note that a valid number starts from digits 1-9 except the number 0 itself. i.e. leading zeroes are not allowed.
