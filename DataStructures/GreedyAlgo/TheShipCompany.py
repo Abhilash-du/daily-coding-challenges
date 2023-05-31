@@ -21,7 +21,8 @@ It is guaranteed that there are at least A empty seats in total.
 Input Format
 First argument is a integer A denoting the number of passengers in the queue.
 Second arugument is a integer B deonting the number of ships.
-Third argument is an integer array C of size B where C[i] denotes the number of empty seats in the i-th ship before the ticket office starts selling tickets.
+Third argument is an integer array C of size B where C[i] denotes the number of empty seats in the i-th ship before the
+ ticket office starts selling tickets.
 
 Output Format
 Return an array of size 2 denoting the maximum and minimum money that the ship company can earn.
