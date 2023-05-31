@@ -1,4 +1,8 @@
 """
+# Author: Abhilash Dubey
+# GitHub:  https://github.com/Abhilash-du/
+# Description: Python solution to determine the maximum and the minimum money that the ship company can earn
+
 Problem Description
 The local ship renting service has a special rate plan:
 
