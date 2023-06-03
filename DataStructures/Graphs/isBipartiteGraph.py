@@ -68,7 +68,8 @@ class Solution:
                     if visited[dest] == -1:  # If the adjacent node is not visited
                         visited[dest] = expected_color  # Mark it as visited with the expected color
                         queue.append((dest, expected_color))  # Add it to the queue for further traversal
-                    elif visited[dest] != expected_color:  # If the adjacent node is already visited and its color doesn't match the expected color
+                    elif visited[dest] != expected_color:
+                        # If the adjacent node is already visited and its color doesn't match the expected color
                         return False  # The graph is not bipartite
 
             return True  # All nodes are successfully visited and the graph is bipartite
