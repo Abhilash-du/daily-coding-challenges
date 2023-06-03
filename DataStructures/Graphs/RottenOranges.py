@@ -67,7 +67,7 @@ from collections import deque
 
 
 class Solution:
-    # @param grid : list of list of integers
+    # @param grid : list of integers
     # @return an integer
     def solve(self, grid):
         rows = len(grid)
@@ -113,13 +113,16 @@ class Solution:
 '''
 Intuition:
 - The code solves the problem using a Breadth-First Search (BFS) approach.
-- It starts by identifying the initial rotten oranges and marks their timestamps as 0. Empty cells are also marked with timestamp 0.
+- It starts by identifying the initial rotten oranges and marks their timestamps as 0. Empty cells are also marked with
+ timestamp 0.
 - Then, it performs a BFS on the grid, updating the timestamps of adjacent fresh oranges to the current timestamp + 1.
 - Finally, it finds the maximum timestamp in the grid and returns it as the result.
 
 Time Complexity (TC): O(N * M)
-- The BFS algorithm visits each cell at most once, resulting in a time complexity of O(N * M), where N is the number of rows and M is the number of columns in the matrix.
+- The BFS algorithm visits each cell at most once, resulting in a time complexity of O(N * M), where N is the number 
+of rows and M is the number of columns in the matrix.
 
 Space Complexity (SC): O(N * M)
-- The code utilizes a 2D matrix to store the timestamps for each cell, resulting in a space complexity of O(N * M), where N is the number of rows and M is the number of columns in the matrix.
+- The code utilizes a 2D matrix to store the timestamps for each cell, resulting in a space complexity of O(N * M),
+ where N is the number of rows and M is the number of columns in the matrix.
 '''
