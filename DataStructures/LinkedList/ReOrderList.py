@@ -1,4 +1,8 @@
 """
+# Author: Abhilash Dubey
+# GitHub:  https://github.com/Abhilash-du/
+# Description: Python solution to reorder the provided linked list
+
 Q3. Reorder List
 Problem Description
 Given a singly linked list A  :-
