@@ -1,51 +1,60 @@
 """
-Q1. 0-1 Knapsack
-Problem Description
-Given two integer arrays A and B of size N each which represent values and weights associated with N items respectively.
-Also given an integer C which represents knapsack capacity.
-Find out the maximum value subset of A such that sum of the weights of this subset is smaller than or equal to C.
+# Author: Abhilash Dubey
+# GitHub:  https://github.com/Abhilash-du/
+# Description: Python solution to determine the maximum value subset of items such that the sum of their weights
+#              is smaller than or equal to the knapsack capacity.
 
-NOTE:You cannot break an item, either pick the complete item, or don’t pick it (0-1 property).
+Problem: 0-1 Knapsack
 
-Problem Constraints
+Problem Description:
+Given two integer arrays values and weights of size N each, where values[i] represents the value associated
+with the i-th item and weights[i] represents the weight of the i-th item.
+Also given an integer knapsackCapacity which represents the maximum weight that the knapsack can hold.
+Find the maximum value subset of items such that the sum of their weights is smaller than or equal to the
+knapsack capacity.
+
+Note: You cannot break an item, either pick the complete item or don't pick it (0-1 property).
+
+Problem Constraints:
 1 <= N <= 10^3
-1 <= C <= 10^3
-1 <= A[i], B[i] <= 10^3
+1 <= knapsackCapacity <= 10^3
+1 <= values[i], weights[i] <= 10^3
 
 Input Format:
-First argument is an integer array A of size N denoting the values on N items.
-Second argument is an integer array B of size N denoting the weights on N items.
-Third argument is an integer C denoting the knapsack capacity.
+First argument is an integer array values of size N denoting the values of N items.
+Second argument is an integer array weights of size N denoting the weights of N items.
+Third argument is an integer knapsackCapacity denoting the knapsack capacity.
 
-Output Format
-Return a single integer denoting the maximum value subset of A such that sum of the weights of this subset is smaller
-than or equal to C.
+Output Format:
+Return a single integer denoting the maximum value subset of items such that the sum of their weights
+is smaller than or equal to the knapsack capacity.
 
-Example Input
+Example Input:
 Input 1:
- A = [60, 100, 120]
- B = [10, 20, 30]
- C = 50
+values = [60, 100, 120]
+weights = [10, 20, 30]
+knapsackCapacity = 50
 
 Input 2:
- A = [10, 20, 30, 40]
- B = [12, 13, 15, 19]
- C = 10
+values = [10, 20, 30, 40]
+weights = [12, 13, 15, 19]
+knapsackCapacity = 10
 
-Example Output
+Example Output:
 Output 1: 220
 Output 2: 0
 
-
-Example Explanation:-
+Example Explanation:
 Explanation 1:
- Taking items with weight 20 and 30 will give us the maximum value i.e 100 + 120 = 220
+Taking items with weights 20 and 30 will give us the maximum value i.e., 100 + 120 = 220.
 
 Explanation 2:
- Knapsack capacity is 10 but each item has weight greater than 10 so no items can be considered in the knapsack
- therefore answer is 0.
-
+Knapsack capacity is 10, but each item has a weight greater than 10, so no items can be considered
+in the knapsack. Therefore, the answer is 0.
 """
+
+
+
 class Solution:
     def recursiveKnapsack(self, Values, Weights, W):
         """
