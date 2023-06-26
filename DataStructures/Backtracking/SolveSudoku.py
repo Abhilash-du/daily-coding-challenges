@@ -1,4 +1,8 @@
 """
+# Author: Abhilash Dubey
+# GitHub:  https://github.com/Abhilash-du/
+# Description: Python solution to determine the numbers that needs to be addeed in Sudoku
+
 Problem Description
 Write a program to solve a Sudoku puzzle by filling the empty cells. Empty cells are indicated by the character '.'
 You may assume that there will be only one unique solution.
@@ -14,7 +18,7 @@ Modify the given input to the required answer.
 
 Example Input
 Input 1:
-A = [[53..7....], [6..195...], [.98....6.], [8...6...3], [4..8.3..1], [7...2...6], [.6....28.], [...419..5], [....8..79]]
+A: [[53..7....], [6..195...], [.98....6.], [8...6...3], [4..8.3..1], [7...2...6], [.6....28.], [...419..5], [....8..79]]
 
 Example Output:-
 Output 1:-
