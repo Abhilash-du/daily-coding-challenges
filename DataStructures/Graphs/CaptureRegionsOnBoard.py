@@ -52,41 +52,42 @@ Explanation 1: O in (4,2) is not surrounded by X from below.
 Explanation 2: No O's are surrounded.
 """
 
-
 class Solution:
     # @param A : list of list of chars
     def solve(self, A):
+        n = len(A)  # Number of rows
+        m = len(A[0])  # Number of columns
 
-        n = len(A)
-        m = len(A[0])
-        visited = set()
-        dir = [(1, 0), (-1, 0), (0, -1), (0, 1)]
+        visited = set()  # Set to track visited cells
+        directions = [(1, 0), (-1, 0), (0, -1), (0, 1)]  # Possible directions
 
+        # Depth-First Search (DFS) function to capture surrounded regions
         def dfs(i, j):
-            visited.add((i, j))
-            for x, y in dir:
-                x += i
-                y += j
-                if -1 < x < n and -1 < y < m and A[x][y] == "O" and (x, y) not in visited:
-                    dfs(x, y)
+            visited.add((i, j))  # Mark current cell as visited
+            for dx, dy in directions:
+                x = i + dx  # New row coordinate
+                y = j + dy  # New column coordinate
+                if 0 <= x < n and 0 <= y < m and A[x][y] == 'O' and (x, y) not in visited:
+                    dfs(x, y)  # Recursively visit neighboring cells
 
-        # Capture 'O' regions starting from the borders
+        # Capture 'O' regions starting from the border cells
         for i in range(n):
-            if A[i][0] == "O" and (i, 0) not in visited:
-                dfs(i, 0)
-            if A[i][m - 1] == "O" and (i, m - 1) not in visited:
-                dfs(i, m - 1)
+            if A[i][0] == 'O' and (i, 0) not in visited:
+                dfs(i, 0)  # DFS from left border cell
+            if A[i][m - 1] == 'O' and (i, m - 1) not in visited:
+                dfs(i, m - 1)  # DFS from right border cell
 
         for j in range(m):
-            if A[0][j] == "O" and (0, j) not in visited:
-                dfs(0, j)
-            if A[n - 1][j] == "O" and (n - 1, j) not in visited:
-                dfs(n - 1, j)
+            if A[0][j] == 'O' and (0, j) not in visited:
+                dfs(0, j)  # DFS from top border cell
+            if A[n - 1][j] == 'O' and (n - 1, j) not in visited:
+                dfs(n - 1, j)  # DFS from bottom border cell
 
-        for i in range(1, n):
-            for j in range(1, m):
-                if (i, j) not in visited and A[i][j] == "O":
-                    A[i][j] = "X"
+        # Update 'O' cells that are not visited (surrounded regions) to 'X'
+        for i in range(n):
+            for j in range(m):
+                if A[i][j] == 'O' and (i, j) not in visited:
+                    A[i][j] = 'X'
 
         return A
 
