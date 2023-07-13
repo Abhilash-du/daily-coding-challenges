@@ -1,4 +1,8 @@
 """
+# Author: Abhilash Dubey
+# Problem Statement: Sort the provided Linked list
+# GitHub: https://github.com/Abhilash-du/
+
 Q2. Sort List
 Problem Description
 Sort a linked list, A in O(n log n) time.
