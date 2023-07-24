@@ -21,6 +21,9 @@ Output: [[0,0,0]]
 Constraints:
 1 <= n <= 20
 """
+from typing import Optional, List
+
+
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
