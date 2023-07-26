@@ -84,6 +84,7 @@ class Solution:
 
         return answer_speed
 
+
 """
 Intuition:
 The problem requires finding the minimum positive integer speed (in kilometers per hour) that all the trains must travel
