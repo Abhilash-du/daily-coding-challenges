@@ -15,6 +15,7 @@ Example 2:
 Input: n = 1
 Output: [[1]]
 """
+from typing import Optional, List
 
 
 # Definition for a binary tree node.
