@@ -12,7 +12,7 @@ Whether you're a beginner getting started with DSA or an experienced developer l
 
 ### Topics
 
-- [2D Matrices](daily-coding-challenges/2DMatrices)
+- [2D Matrices](DataStructures/2DMatrices)
 - [Arrays and Mathematics](/Arrays_and_Maths)
 - [Backtracking](/Backtracking)
 - [Binary Search](/BinarySearch)
