@@ -35,8 +35,8 @@ Output 1:[1, 2, 2, 4, 3, 5]
 Output 2:[1, 1, 2, 3, 3]
 
 Example Explanation
-Explanation 1:  [1, 2, 2] are less than B wheread [4, 3, 5] are greater than or equal to B.
-Explanation 2: [1, 1] are less than B wheread [2, 3, 3] are greater than or equal to B.
+Explanation 1:  [1, 2, 2] are less than B whereas [4, 3, 5] are greater than or equal to B.
+Explanation 2: [1, 1] are less than B whereas [2, 3, 3] are greater than or equal to B.
 """
 
 # Definition for singly-linked list.
